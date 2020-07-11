@@ -34,7 +34,7 @@ public class PlaneMovement : MonoBehaviour
 
     void Update()
     {
-        speed -= Time.deltaTime * slowingSpeed * 100f;
+        speed -= Time.deltaTime * slowingSpeed;
         //Debug.Log("Plane: Current speed is " + currentSpeed.ToString("0"));
 
         Tilting();
@@ -43,10 +43,10 @@ public class PlaneMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //forward force
-        rb.AddForce(transform.forward * speed * Time.fixedDeltaTime);
+        rb.velocity = transform.forward * speed * Time.fixedDeltaTime + -Vector3.up * gravityModifier * Time.fixedDeltaTime;
 
         //static up force
-        rb.AddForce(Vector3.up * Time.fixedDeltaTime * 10000f / gravityModifier);
+        //rb.AddForce(Vector3.up * Time.fixedDeltaTime * 10000f / gravityModifier);
     }
 
     void Tilting()

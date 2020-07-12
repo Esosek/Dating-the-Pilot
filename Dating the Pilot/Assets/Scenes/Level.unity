@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -271,7 +271,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -1.2197928e-12, z: -1.2197928e-12, w: -1.2197928e-12}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -834,12 +834,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de0a7a200cf04244498bf6579ef2783d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 80
+  speed: 3500
   slowingSpeed: 1
   rotationSpeed: 45
   maxModelRotation: 20
   modelRotationSpeed: 2
-  gravityModifier: 35
+  gravityModifier: 350
   planeModel: {fileID: 555005992}
   crosshair: {fileID: 731260091}
 --- !u!65 &5985430247303557260

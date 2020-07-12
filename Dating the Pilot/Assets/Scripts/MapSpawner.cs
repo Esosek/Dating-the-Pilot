@@ -34,7 +34,7 @@ public class MapSpawner : MonoBehaviour
                 {
                     if(o == landingIndex)
                     {
-                        Instantiate(landingTile, new Vector3(currentSpawnPoint.x + offset * o, currentSpawnPoint.y, currentSpawnPoint.z), Quaternion.identity);
+                        Instantiate(landingTile, new Vector3(currentSpawnPoint.x + offset * o, currentSpawnPoint.y - 2.4f, currentSpawnPoint.z), Quaternion.identity);
                         landingSpawned = true;
                     }
                     else

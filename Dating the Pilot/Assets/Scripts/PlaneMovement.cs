@@ -28,8 +28,6 @@ public class PlaneMovement : MonoBehaviour
     {
         screenCenter.x = Screen.width / 2;
         screenCenter.y = Screen.height / 2;
-
-        Cursor.visible = false;
     }
 
     void Update()
@@ -57,12 +55,12 @@ public class PlaneMovement : MonoBehaviour
         mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
 
         // crosshair move
-        crosshair.localPosition = new Vector3 (mouseDistance.x * 100f, mouseDistance.y * 100f, 0f);
+        crosshair.localPosition = new Vector3 (mouseDistance.x * 100f, 0f, 0f);
 
         // model rotation
-        Quaternion targetRotation = Quaternion.Euler (-mouseDistance.y * maxModelRotation, mouseDistance.x * maxModelRotation, -mouseDistance.x * maxModelRotation);
+        Quaternion targetRotation = Quaternion.Euler (0f, mouseDistance.x * maxModelRotation, -mouseDistance.x * maxModelRotation);
         planeModel.localRotation = Quaternion.Lerp(planeModel.localRotation, targetRotation, Time.deltaTime * modelRotationSpeed);
 
-        transform.Rotate(-mouseDistance.y * rotationSpeed * Time.deltaTime, mouseDistance.x * rotationSpeed * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(0f, mouseDistance.x * rotationSpeed * Time.deltaTime, 0f, Space.Self);
     }
 }

@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &537230137245589606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537230137245589604}
+  - component: {fileID: 537230137245589607}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &537230137245589604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537230137245589606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &537230137245589607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537230137245589606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afdcf380f9598457ca42312f8d2aa623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Menu Music
+    clip: {fileID: 8300000, guid: 44df100bcfffd0944916a0b174500862, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: 24300002, guid: 2b0bc2da793ff47dca43122d81274f4c, type: 2}
+    source: {fileID: 0}
+  - name: Intro01
+    clip: {fileID: 8300000, guid: 25c042934af57824288acf99e42f3b01, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Intro02
+    clip: {fileID: 8300000, guid: 83e9201cca9dafd4389fad1f6efb8989, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Intro03
+    clip: {fileID: 8300000, guid: e2603747d87d2874e943da3ca34b8228, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Intro04
+    clip: {fileID: 8300000, guid: 00c496c15a510ef499b83e1eaa365603, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Intro05
+    clip: {fileID: 8300000, guid: 6b05cdfb0d723f245ab4844cfa29d9b7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Crash
+    clip: {fileID: 8300000, guid: 1c36960501ba2c8438aa69b4d7fd3011, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Landing
+    clip: {fileID: 8300000, guid: bf84883b76ef9d242af6239a114cd4a7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Motor Off
+    clip: {fileID: 8300000, guid: efbdb96403a11684aa565874249278ce, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Motor Running
+    clip: {fileID: 8300000, guid: 701f20be3da35a54d8bb77ff64a03c21, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: 24300002, guid: bb4d7d219763a4dbd90aa589c7bc2da6, type: 2}
+    source: {fileID: 0}
+  - name: Random Voice01
+    clip: {fileID: 8300000, guid: d3f0a883acb97004c8f8b4219647711c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Random Voice02
+    clip: {fileID: 8300000, guid: 0e13e4f822179854685209059b42397a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Random Voice03
+    clip: {fileID: 8300000, guid: 65f2f835d1790d841ae213a293883eaa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  - name: Random Voice04
+    clip: {fileID: 8300000, guid: 844858d32d3460240bcdd1c476d38bf1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: fab3822012e324d3094596fb36dfe9db, type: 2}
+    source: {fileID: 0}
+  musicVolume: 0
+  soundVolume: 0

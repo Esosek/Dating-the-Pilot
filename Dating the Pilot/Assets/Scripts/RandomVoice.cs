@@ -40,7 +40,7 @@ public class RandomVoice : MonoBehaviour
 
         Debug.Log("Random dialogue");
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
 
         dialogueBox.SetActive(false);
     }
